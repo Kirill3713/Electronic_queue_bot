@@ -214,4 +214,5 @@ def handle_button_click(call):
             bot.send_message(call.message.chat.id, "Мы будем обращаться к вам по-прежнему.")
 # Точка входа
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
     bot.polling(non_stop=True)
